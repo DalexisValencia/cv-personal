@@ -1,0 +1,95 @@
+.owner-profile {
+    padding-top: 130px;
+    padding-bottom: 30px;
+    .max-width {
+        position: relative;
+    }
+    .owner-profile--header {
+        .owner-profile--header-greetings {
+            font: {
+                size: 80px;
+                family: 'todayshop-bold';
+            }
+            color: var(--primary-darken-color);
+            line-height: 0.7;
+        }
+        .owner-profile--header-name {
+            margin: 10px 0px;
+            font: {
+                size: 40px;
+                family: 'todayshop-bold';
+            }
+            color: var(--primary-ligth-color);
+            line-height: 0.7;
+        }
+        .owner-profile--header-profile {
+            position: relative;
+            margin-top: 20px;
+            margin-left: 30px;
+            font: {
+                size: 48px;
+                family: 'todayshop-bold';
+            }
+            color: var(--primary-darken-color);
+            line-height: 0.7;
+            &::before {
+                content: "";
+                width: 15px;
+                height: 66px;
+                position: absolute;
+                left: -31px;
+                top: -15px;
+                background-color: var(--primary-ligth-one-color);
+                opacity: 0.7;
+            }
+        }
+        .owner-profile--header-description {
+            width: 100%;
+            max-width: 480px;
+            margin: 40px 0;
+            color: var(--primary-ligth-color);
+            font: {
+                size: 16px;
+                weight: 400;
+                family: 'todayshop-regular';
+            }
+        }
+        button {
+            @extend %button;
+            padding: 10px 20px;
+            border-radius: $button-radius;
+            color: var(--tertiary-color);
+            font: {
+                size: 20px;
+                weight: 500;
+                family: 'todayshop-regular';
+            }
+            background-color: var(--primary-darken-color);
+        }
+        .go-to-linkedin {
+            margin-left: 20px;
+            span {
+                margin-right: 4px;
+                font-size: 24px;
+            }
+        }
+    }
+    .owner-profile--avatar {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        right: 0px;
+        top: 0;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -158px;
+            right: -225px;
+            width: 170%;
+            height: 145%;
+            @extend %bgImage;
+            background-size: 100%;
+            background-image: url(../img/misc/bg-owner.svg);
+        }
+    }
+}

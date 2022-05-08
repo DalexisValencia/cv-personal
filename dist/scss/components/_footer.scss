@@ -1,0 +1,93 @@
+.main-footer {
+    position: relative;
+    background-color: transparent;
+    background-color: var(--primary-darken-one-color);
+    padding: 100px 0;
+    border-top: 8px solid var(--secondary-color);
+    background-image: url(../img/misc/footer-left-waves.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    &::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        width: 183px;
+        height: 100%;
+        background-image: url(../img/misc/footer-right-waves.svg);
+        @extend %bgImage;
+        background-size: cover;
+    }
+    .max-width {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-social {
+        position: relative;
+        z-index: 1;
+        ul {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 0px 10px;
+                a {
+                    color: var(--tertiary-color);
+                    font-size: 22px;
+                    text-decoration: none;
+                    transition: 0.2s all;
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+    .footer-contact {
+        position: relative;
+        z-index: 1;
+        h2 {
+            width: 100%;
+            color: var(--tertiary-color);
+            text-align: center;
+            text-transform: uppercase;
+            font: {
+                size: 50px;
+                family: 'todayshop-bold';
+            }
+        }
+        ul {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 0px 20px;
+                text-align: center;
+                * {
+                    color: var(--tertiary-color);
+                }
+                a {
+                    text-decoration: none;
+                    font: {
+                        size: 14px;
+                        family: 'todayshop-regular';
+                    }
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
+                }
+                h4 {
+                    margin-top: 7px;
+                    text-transform: uppercase;
+                    font: {
+                        size: 16px;
+                        family: 'todayshop-bold';
+                    }
+                }
+                .icon {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

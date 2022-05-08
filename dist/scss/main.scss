@@ -1,0 +1,20 @@
+@import "abstracts/fonts";
+@import "abstracts/normalize";
+@import "abstracts/variables";
+//base
+@import "base/queries";
+@import "base/layout";
+//components
+@import "components/buttons";
+@import "components/footer";
+@import "components/header";
+@import "components/input";
+@import "components/selects";
+//pages 
+//@import "pages/page";
+//sections
+@import "sections/ownerprofile";
+@import "sections/highlightedSkills";
+@import "sections/jobExperience";
+@import "sections/myprojects";
+@import "sections/bestProyects";

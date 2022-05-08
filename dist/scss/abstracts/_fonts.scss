@@ -1,0 +1,12 @@
+$path: '../fonts';
+@font-face {
+    font-family: 'todayshop-bold';
+    src: url('#{$path}/TodaySHOP-Bold.otf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'todayshop-regular';
+    src: url('#{$path}/TodaySHOP-Regular.otf');
+    font-display: fallback;
+}

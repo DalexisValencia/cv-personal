@@ -1,0 +1,107 @@
+.highlighted-skills {
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+    .max-width {
+        display: flex;
+        justify-content: space-around;
+    }
+    .highlighted-skills--card {
+        position: relative;
+        background-color: var(--tertiary-color);
+        box-shadow: 0px 4px 7px var(--primary-color);
+        overflow: hidden;
+        border-radius: 5px;
+        max-width: 225px;
+        width: 33%;
+        cursor: pointer;
+        .skill-description {
+            padding: 8px 25px;
+            display: flex;
+            align-items: center;
+            .skill-description---title {
+                color: var(--primary-ligth-color);
+                position: block;
+                font: {
+                    family: 'todayshop-regular';
+                    size: 17px;
+                }
+                margin-top: 5px;
+            }
+            .skill-description---percentage {
+                opacity: 0;
+                transform: scale(0.2);
+                transition: 0.2s all;
+                position: absolute;
+                right: 20px;
+                margin-left: 15px;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--primary-color);
+                color: var(--tertiary-color);
+                font-size: 12px;
+                border-radius: 50%;
+            }
+            .icon {
+                transition: 0.2s all;
+                font-size: 20px;
+                margin-right: 15px;
+                margin-left: 25px;
+            }
+        }
+        .total-progress {
+            transition: 0.5s all;
+            opacity: 0;
+            width: 100%;
+            background-color: var(--primary-ligth-one-color);
+            height: 7px;
+            &::before {
+                content: "";
+                position: relative;
+                height: 100%;
+                display: block;
+                width: 0%;
+                transition: 0.5s all;
+            }
+        }
+        &:hover {
+            .icon {
+                margin-left: 0;
+                &.icon-ai-logo {
+                    color: #300;
+                }
+                &.icon-ps-logo {
+                    color: #001834;
+                }
+                &.icon-an-logo {
+                    color: #00005b;
+                }
+            }
+            .skill-description---percentage {
+                opacity: 1;
+                transform: scale(0.9);
+            }
+            .total-progress {
+                opacity: 1;
+                &::before {
+                    width: 70%;
+                }
+                &.ai::before {
+                    background-color: #ff9a00;
+                    width: 85%;
+                }
+                &.ps::before {
+                    width: 70%;
+                    background-color: #0af;
+                }
+                &.an::before {
+                    width: 60%;
+                    background-color: #9a9aff;
+                }
+            }
+        }
+    }
+}

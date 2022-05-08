@@ -1,0 +1,108 @@
+.job-experience {
+    margin-top: 90px;
+    .max-width {
+        display: flex;
+        justify-content: space-between;
+    }
+    .job-experience--header {
+        width: 60%;
+        .job-experience--description {
+            margin-top: 35px;
+            font: {
+                family: 'todayshop-regular';
+                size: 14px;
+                color: var(--primary-darken-color);
+            }
+        }
+    }
+    .job-experience--companies {
+        margin-top: 80px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        // width: 50%;
+        max-width: 570px;
+    }
+}
+
+.companies-card {
+    // margin-bottom: 20px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(var(--primary-ligth-two-color), 0.4);
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 3px 4px var(--primary-ligth-two-color);
+    background-color: #f7f7f7;
+    .companies-card--cover {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        img {
+            width: 100%;
+            max-width: 70px;
+        }
+        .companies-card--name {
+            font-size: 15px;
+            width: 100%;
+            text-align: center;
+            color: var(--primary-ligth-two-color);
+        }
+    }
+    .companies-card--hover {
+        @extend %bgImage;
+        transition: 0.5s all;
+        background-image: url(../img/misc/lines-crafts.svg);
+        opacity: 0;
+        position: absolute;
+        // display: none;
+        background-color: var(--primary-darken-one-color);
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: -200px;
+        .companies-card--name {
+            color: var(--tertiary-color);
+            font-size: 11px;
+        }
+        time {
+            font-size: 9px;
+            color: var(--primary-ligth-three-color);
+            font-family: 'todayshop-regular';
+            .icon-calendar-icon {
+                margin-right: 5px;
+                font-size: 10px;
+            }
+        }
+        p {
+            margin-top: 5px;
+            font-family: 'todayshop-regular';
+            font-size: 12px;
+            color: var(--primary-ligth-three-color);
+        }
+    }
+    .companies-card--name {
+        font: {
+            family: 'todayshop-bold';
+            weight: 400;
+        }
+        text-transform: uppercase;
+    }
+    &:hover {
+        .companies-card--hover {
+            // display: block;
+            top: 0px;
+            opacity: 1;
+        }
+    }
+}
