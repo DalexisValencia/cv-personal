@@ -3,6 +3,34 @@
     .max-width {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        &::after,
+        &::before {
+            @extend %bgImage;
+            background-size: content;
+            position: absolute;
+            content: "";
+        }
+        &::before {
+            bottom: -359px;
+            left: -500px;
+            width: 703px;
+            height: 600px;
+            // border: 1px solid red;
+            background-image: url(../img/misc/experience/experience__misc1.svg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 552px;
+            height: 606px;
+            top: -100px;
+            right: -50%;
+            background-image: url(../img/misc/experience/experience__misc2.svg);
+            top: 15px;
+            right: -21%;
+        }
     }
     .job-experience--header {
         width: 60%;
@@ -27,6 +55,7 @@
 }
 
 .companies-card {
+    z-index: 1;
     // margin-bottom: 20px;
     margin: 10px;
     position: relative;

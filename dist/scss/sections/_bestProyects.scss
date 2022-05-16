@@ -1,6 +1,35 @@
 .best-proyects {
     margin-top: 100px;
     margin-bottom: 80px;
+    position: relative;
+    >.max-width {
+        &::after,
+        &::before {
+            @extend %bgImage;
+            background-size: content;
+            position: absolute;
+            content: "";
+        }
+        &::before {
+            top: -75px;
+            left: -500px;
+            width: 703px;
+            height: 600px;
+            // border: 1px solid red;
+            background-image: url(../img/misc/best-project/best-prokect__misc3.svg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 210px;
+            top: -100px;
+            right: 27%;
+            background-image: url(../img/misc/best-project/best-prokect__misc1.svg);
+        }
+        position: relative;
+        z-index: 1;
+    }
 }
 
 //Contenedor general de los sliders

@@ -61,7 +61,7 @@ body {
         height: 14vw;
         bottom: 420px;
         @extend %bgImage;
-        background-size: 90%;
+        background-size: contain;
         background-image: url(../img/misc/footer-top-craft.svg);
         background-position: bottom;
     }
