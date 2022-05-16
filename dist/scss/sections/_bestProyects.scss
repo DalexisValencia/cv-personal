@@ -1,13 +1,20 @@
 .best-proyects {
-    border: 1px solid red;
     margin-top: 100px;
     margin-bottom: 80px;
+}
+
+//Contenedor general de los sliders
+.best-proyects__carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .best-proyects--sliders {
     margin-top: 50px;
     .best-proyects--sliders-item {
-        width: 280px;
+        max-width: 311px;
+        padding-left: 30px;
         .sliders-item-cover {
             position: relative;
             width: 280px;
@@ -30,7 +37,7 @@
                 background-color: var(--primary-darken-color);
                 color: var(--tertiary-color);
                 border-radius: 5px;
-                left: -50px;
+                left: -30px;
                 font: {
                     size: 16px;
                     weight: 500;
@@ -60,6 +67,29 @@
                     family: 'todayshop-regular';
                 }
             }
+        }
+    }
+}
+
+.best-proyects__carousel-nav {
+    width: 106%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    left: -3%;
+    button {
+        color: transparent;
+        @extend %button;
+        @extend %bgImage;
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary-ligth-two-color);
+        background-image: url(../img/misc/arrow-slider.svg);
+        background-size: 65%;
+        border-radius: 4px;
+        &.owl-prev {
+            transform: scaleX(-1);
         }
     }
 }
