@@ -49,3 +49,20 @@ body {
         bottom: -13px;
     }
 }
+
+//contenedor principal
+.main__wrapper {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        max-height: 230px;
+        height: 14vw;
+        bottom: 420px;
+        @extend %bgImage;
+        background-size: 90%;
+        background-image: url(../img/misc/footer-top-craft.svg);
+        background-position: bottom;
+    }
+}
