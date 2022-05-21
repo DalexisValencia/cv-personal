@@ -2,6 +2,20 @@
     margin-top: 100px;
     position: relative;
     z-index: 1;
+    >.max-width {
+        position: relative;
+        &::before {
+            content: "";
+            bottom: -250px;
+            right: -300px;
+            position: absolute;
+            width: 341px;
+            height: 467px;
+            border: 1px solid red;
+            @extend %bgImage;
+            background-image: url(../img/misc/project/project__misc2.svg);
+        }
+    }
     .proyects-header {
         width: 100%;
         display: flex;
@@ -89,7 +103,11 @@
         opacity: 0;
         transition: 0.2s all;
         display: column;
+        margin-left: -200px;
+        pointer-events: none;
         &.active {
+            pointer-events: all;
+            margin-left: 0;
             opacity: 1;
             transition: 0.5s all;
         }

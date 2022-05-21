@@ -19,6 +19,8 @@
         position: relative;
     }
     .owner-profile--header {
+        position: relative;
+        z-index: 1;
         .owner-profile--header-greetings {
             font: {
                 size: 80px;
