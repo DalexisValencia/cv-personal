@@ -1,5 +1,7 @@
 .proyects {
     margin-top: 100px;
+    position: relative;
+    z-index: 1;
     .proyects-header {
         width: 100%;
         display: flex;
@@ -76,4 +78,24 @@
             }
         }
     }
+}
+
+.proyects-gallery__wrapper {
+    position: relative;
+    border: 1px solid red;
+    min-height: 400px;
+    .proyects-gallery--category {
+        position: absolute;
+        opacity: 0;
+        transition: 0.2s all;
+        display: column;
+        &.active {
+            opacity: 1;
+            transition: 0.5s all;
+        }
+    }
+}
+
+.proyects-gallery__card {
+    border: 1px solid red;
 }
