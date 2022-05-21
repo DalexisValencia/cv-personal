@@ -9,6 +9,7 @@
             background-size: content;
             position: absolute;
             content: "";
+            pointer-events: none;
         }
         &::before {
             top: -75px;

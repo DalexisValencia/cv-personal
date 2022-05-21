@@ -105,15 +105,67 @@
         display: column;
         margin-left: -200px;
         pointer-events: none;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        column-gap: 2%;
+        row-gap: 5%;
         &.active {
             pointer-events: all;
             margin-left: 0;
             opacity: 1;
             transition: 0.5s all;
+            // position: relative;
         }
     }
 }
 
 .proyects-gallery__card {
-    border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    width: 100%;
+    // max-width: 300px;
+    min-width: 30%;
+    border-radius: 10px;
+    &.no-visible {
+        visibility: hidden;
+        pointer-events: none;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            transform: scale(1.2) rotate(-5deg);
+            &~.proyects-gallery__card-description {
+                bottom: 0;
+                opacity: 0.95;
+            }
+        }
+    }
+    .proyects-gallery__card-description {
+        @extend %bgImage;
+        background-image: url(../img/misc/footer-right-waves.svg);
+        background-size: cover;
+        position: absolute;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        padding: 15px 10px;
+        bottom: -150px;
+        width: 100%;
+        background-color: var(--secondary-dark-color);
+        z-index: 1;
+        opacity: 0;
+        transition: bottom 0.52s;
+        box-shadow: 0 0 -2px 2px var(--primary-ligth-three-color);
+        .card-description__title {
+            color: var(--primary-color);
+            font: {
+                size: 16px;
+                family: 'todayshop-regular';
+            }
+        }
+    }
 }

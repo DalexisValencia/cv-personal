@@ -18,17 +18,17 @@
                 <img src="dist/img/logo.svg" alt="dbug-logo" title="dbug-logo" class="brand-logo">
                 <nav class="header-navigation">
                     <ul class="header-navigation--main">
-                        <li>
-                            <a href="">Experiencia</a>
+                        <li class="active">
+                            <a href="#job-experience">Experiencia</a>
                         </li>
                         <li>
-                            <a href="">Proyectos</a>
+                            <a href="#proyects">Proyectos</a>
                         </li>
                         <li>
-                            <a href="">Destacados</a>
+                            <a href="#best-proyects">Destacados</a>
                         </li>
                         <li>
-                            <a href="">Contacto</a>
+                            <a href="#main-footer">Contacto</a>
                         </li>
                     </ul>
 
@@ -50,7 +50,7 @@
             </div>
         </header>
 
-        <section class="owner-profile">
+        <section class="owner-profile" id="owner-profile">
             <div class="max-width">
                 <header class="owner-profile--header">
                     <h2 class="owner-profile--header-greetings">¡HOLA!</h2>
@@ -79,7 +79,7 @@
             </div>
         </section>
 
-        <section class="highlighted-skills">
+        <section class="highlighted-skills" id="highlighted-skills">
             <div class="max-width">
                 <div class="highlighted-skills--card">
                     <div class="skill-description">
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-        <section class="job-experience">
+        <section class="job-experience" id="job-experience">
             <div class="max-width">
                 <header class="job-experience--header">
                     <h2 class="section-title">
@@ -208,7 +208,7 @@
             </div>
         </section>
 
-        <section class="proyects">
+        <section class="proyects" id="proyects">
             <div class="max-width">
                 <header class="proyects-header">
                     <h2 class="section-title">
@@ -226,10 +226,10 @@
                 <div class="proyects-gallery">
                     <ul class="proyects-gallery--filter">
                         <li class="active" data-attr-filter="category-1">
-                            Fotografía
+                            Imagen Corporativa
                         </li>
                         <li data-attr-filter="category-2">
-                            Imagen Corporativa
+                            Fotografía
                         </li>
                         <li data-attr-filter="category-3">
                             Historia y teoría del diseño
@@ -240,27 +240,159 @@
                     </ul>
 
                     <div class="proyects-gallery__wrapper">
+                        <!--Imagen Corporativa-->
                         <div class="proyects-gallery--category active" id="category-1">
                             <div class="proyects-gallery__card">
-                                <img src="/" class="proyects-gallery__card-img" />
+                                <img src="dist/img/gallery/imageCorporativa/1.png" class="proyects-gallery__card-img detail-image" />
                                 <div class="proyects-gallery__card-description">
                                     <h3 class="card-description__title">
+                                        Portada Marca Personal
+                                    </h3>
+                                </div>
+                            </div>
 
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/imageCorporativa/2.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Logo Marca Personal
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/imageCorporativa/3.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Mockup Marca Personal
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/imageCorporativa/4.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Linemientos de la marca personal
                                     </h3>
                                 </div>
                             </div>
                         </div>
 
                         <div class="proyects-gallery--category" id="category-2">
-                            Categoria 2
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/foto/01.jpg" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Publicidad Marca Golty
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/foto/02.jpg" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Publicidad Marca Golty
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/foto/3.jpg" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Publicidad Marca ORSO
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/foto/4.jpg" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Publicidad Marca PEPSI
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/foto/5.jpg" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Publicidad Marca PEPSI
+                                    </h3>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="proyects-gallery--category" id="category-3">
-                            Categoria 3
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/historia/1.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Libro iluminado
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/historia/2.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Mascota
+                                    </h3>
+                                </div>
+                            </div>
+
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/historia/3.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Arte ruso
+                                    </h3>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="proyects-gallery--category" id="category-4">
-                            Categoria 4
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/3d/1.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Lata y botella
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/3d/2.png" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Zapote
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/3d/3.jpg" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Empaque
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="proyects-gallery__card">
+                                <img src="dist/img/gallery/3d/4.jpg" class="proyects-gallery__card-img detail-image" />
+                                <div class="proyects-gallery__card-description">
+                                    <h3 class="card-description__title">
+                                        Stand
+                                    </h3>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -268,7 +400,7 @@
             </div>
         </section>
 
-        <section class="best-proyects">
+        <section class="best-proyects" id="best-proyects">
             <div class="max-width">
                 <header class="best-proyects-header">
                     <h2 class="section-title">
@@ -280,26 +412,9 @@
                     <div class="best-proyects--sliders owl-carousel">
                         <div class="best-proyects--sliders-item">
                             <div class="sliders-item-cover">
-                                <div class="sliders-item-picture--label">Metodología proyectual del diseño</div>
-                                <figure>
-                                    <img src="dist/img/highlight/highlight-1.png" class="sliders-item-picture--image" />
-                                </figure>
-                            </div>
-
-                            <div class="sliders-item-description">
-                                <time><i class="icon-calendar-icon"></i>31/08/2020</time>
-                                <p>
-                                    <b>Arte psicodélico:</b>
-                                    <br> Basados en este tipo de arte, debíamos analizar a sus exponentes más importantes e intentar crear un diseño para una camiseta.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="best-proyects--sliders-item">
-                            <div class="sliders-item-cover">
                                 <div class="sliders-item-picture--label">Diagramación</div>
                                 <figure>
-                                    <img src="dist/img/highlight/highlight-2.png" class="sliders-item-picture--image" />
+                                    <img src="dist/img/highlight/highlight-2.png" class="sliders-item-picture--image detail-image" />
                                 </figure>
                             </div>
 
@@ -314,9 +429,43 @@
 
                         <div class="best-proyects--sliders-item">
                             <div class="sliders-item-cover">
+                                <div class="sliders-item-picture--label">Metodología proyectual del diseño</div>
+                                <figure>
+                                    <img src="dist/img/highlight/highlight-1.png" class="sliders-item-picture--image detail-image" />
+                                </figure>
+                            </div>
+
+                            <div class="sliders-item-description">
+                                <time><i class="icon-calendar-icon"></i>31/08/2020</time>
+                                <p>
+                                    <b>Arte psicodélico:</b>
+                                    <br> Basados en este tipo de arte, debíamos analizar a sus exponentes más importantes e intentar crear un diseño para una camiseta.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="best-proyects--sliders-item">
+                            <div class="sliders-item-cover">
+                                <div class="sliders-item-picture--label">Teoría del color</div>
+                                <figure>
+                                    <img src="dist/img/highlight/highlight-7.png" class="sliders-item-picture--image detail-image" />
+                                </figure>
+                            </div>
+
+                            <div class="sliders-item-description">
+                                <time><i class="icon-calendar-icon"></i>02/03/2021</time>
+                                <p>
+                                    <b>Diseño Breaking Bad</b>
+                                    <br>Con una serie famosa, en mi caso Breaking Bad, debíamos construir un poster utilizando colores que destacaran en la serie.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="best-proyects--sliders-item">
+                            <div class="sliders-item-cover">
                                 <div class="sliders-item-picture--label">Diagramación</div>
                                 <figure>
-                                    <img src="dist/img/highlight/highlight-3.png" class="sliders-item-picture--image" />
+                                    <img src="dist/img/highlight/highlight-3.png" class="sliders-item-picture--image detail-image" />
                                 </figure>
                             </div>
 
@@ -333,7 +482,7 @@
                             <div class="sliders-item-cover">
                                 <div class="sliders-item-picture--label">Metodología proyectual del diseño</div>
                                 <figure>
-                                    <img src="dist/img/highlight/highlight-4.png" class="sliders-item-picture--image" />
+                                    <img src="dist/img/highlight/highlight-4.png" class="sliders-item-picture--image detail-image" />
                                 </figure>
                             </div>
 
@@ -350,7 +499,7 @@
                             <div class="sliders-item-cover">
                                 <div class="sliders-item-picture--label">EMPAQUE</div>
                                 <figure>
-                                    <img src="dist/img/highlight/highlight-5.png" class="sliders-item-picture--image" />
+                                    <img src="dist/img/highlight/highlight-5.png" class="sliders-item-picture--image detail-image" />
                                 </figure>
                             </div>
 
@@ -367,7 +516,7 @@
                             <div class="sliders-item-cover">
                                 <div class="sliders-item-picture--label">3D</div>
                                 <figure>
-                                    <img src="dist/img/highlight/highlight-6.jpg" class="sliders-item-picture--image" />
+                                    <img src="dist/img/highlight/highlight-6.jpg" class="sliders-item-picture--image detail-image" />
                                 </figure>
                             </div>
 
@@ -379,23 +528,6 @@
                                 </p>
                             </div>
                         </div>
-
-                        <div class="best-proyects--sliders-item">
-                            <div class="sliders-item-cover">
-                                <div class="sliders-item-picture--label">Teoría del color</div>
-                                <figure>
-                                    <img src="dist/img/highlight/highlight-7.png" class="sliders-item-picture--image" />
-                                </figure>
-                            </div>
-
-                            <div class="sliders-item-description">
-                                <time><i class="icon-calendar-icon"></i>02/03/2021</time>
-                                <p>
-                                    <b>Diseño Breaking Bad</b>
-                                    <br>Con una serie famosa, en mi caso Breaking Bad, debíamos construir un poster utilizando colores que destacaran en la serie.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                     <div class="best-proyects__carousel-nav"></div>
                 </div>
@@ -403,7 +535,7 @@
             </div>
         </section>
 
-        <footer class="main-footer">
+        <footer class="main-footer" id="main-footer">
             <div class="max-width">
                 <div class="footer-social">
                     <img src="dist/img/logo.svg" alt="dbug-logo" title="dbug-logo" class="brand-logo">
@@ -445,6 +577,13 @@
             </div>
         </footer>
     </main>
+
+    <section id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="detailed-image">
+        </div>
+    </section>
 </body>
 <script src="dist/vendor/jquery-3.6.0.slim.js"></script>
 <script src="dist/vendor/owlcarousel/owl.carousel.min.js"></script>

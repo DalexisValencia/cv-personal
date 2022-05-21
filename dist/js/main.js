@@ -10,6 +10,9 @@
                 nav: true,
                 navContainer: $(".best-proyects__carousel-nav"),
                 center: true,
+                touchDrag: false,
+                pullDrag: false,
+                startPosition: 1,
                 responsive: {
                     0: {
                         items: 1
@@ -38,5 +41,18 @@
                 $(".proyects-gallery--category#" + identy).addClass("active")
             });
         }
+        //image click to detail
+        $(".detail-image").on("click", function(e) {
+            const imageurl = $(this).attr("src");
+            $("#myModal").addClass("active");
+            $("body").addClass("no-scroll");
+            $("#detailed-image").attr("src", imageurl);
+            console.info("sñlkdñl")
+        });
+
+        $("#myModal .close").on("click", function() {
+            $("#myModal").removeClass("active");
+            $("body").removeClass("no-scroll");
+        });
     });
 })(jQuery);

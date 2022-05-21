@@ -21,8 +21,16 @@ ul {
     padding: 0px $padding-horizontal;
 }
 
+body,
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--tertiary-color);
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 //Title Sections
