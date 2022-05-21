@@ -46,7 +46,7 @@
                 size: 48px;
                 family: 'todayshop-bold';
             }
-            color: var(--primary-darken-color);
+            color: var(--secondary-dark-color);
             line-height: 0.7;
             &::before {
                 content: "";
@@ -55,8 +55,7 @@
                 position: absolute;
                 left: -31px;
                 top: -15px;
-                background-color: var(--primary-ligth-one-color);
-                opacity: 0.7;
+                background-color: var(--secondary-color);
             }
         }
         .owner-profile--header-description {

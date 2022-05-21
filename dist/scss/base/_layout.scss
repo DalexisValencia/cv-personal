@@ -34,7 +34,8 @@ body {
         size: 70px;
         weight: bold;
     }
-    color: var(--primary-ligth-two-color);
+    color: var(--secondary-color);
+    text-shadow: 0 0 1px var(--secondary-dark-2-color);
     .small {
         display: block;
         color: var(--primary-darken-color);
