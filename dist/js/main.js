@@ -49,10 +49,15 @@
             $("#detailed-image").attr("src", imageurl);
             console.info("sñlkdñl")
         });
-
+        //Click para cerrar modal de la galería
         $("#myModal .close").on("click", function() {
             $("#myModal").removeClass("active");
             $("body").removeClass("no-scroll");
+        });
+        //Click en el menú principal
+        $(".header-navigation--main li").on("click", function() {
+            $(".header-navigation--main li").removeClass("active");
+            $(this).addClass("active");
         });
     });
 })(jQuery);
