@@ -1,6 +1,7 @@
 .main-header {
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    top: 0;
+    z-index: 4;
     width: 100%;
     background-color: var(--primary-darken-color);
     min-height: 100px;
