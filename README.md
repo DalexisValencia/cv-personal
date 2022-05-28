@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center"><b>::Nombre del proyecto::</b></h1>
+  <h1 align="center"><b>::cv-personal::</b></h1>
 </p>
 
 ## Tabla de contenido
