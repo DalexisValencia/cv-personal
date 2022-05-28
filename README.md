@@ -36,9 +36,9 @@ Si ya ejecuto previamente esta instalación no es necesario volver a ejecutarla,
 
 ## Como Ejecutar
 
-Abrir una terminal e ingresar a la carpeta raiz del theme del proyecto, en este caso la carpeta llamada *tambourine-frontEnd-test*.
+Abrir una terminal e ingresar a la carpeta raiz del theme del proyecto, en este caso la carpeta llamada *cv-personal*.
 
-    cd  /tambourine-frontEnd-test
+    cd  /cv-personal
 
 Ejecutar la siguiente tarea transpilar los estilos - una vez se ejecuta queda en modo reactivo, escuchando los cambios que se generen en alguno de los archivos scss o sass.*
 
