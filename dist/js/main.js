@@ -55,8 +55,8 @@
             $("body").removeClass("no-scroll");
         });
         //Click en el menú principal
-        $(".header-navigation--main li").on("click", function() {
-            $(".header-navigation--main li").removeClass("active");
+        $(".item-main-menu").on("click", function() {
+            $(".item-main-menu").removeClass("active");
             $(this).addClass("active");
         });
     });

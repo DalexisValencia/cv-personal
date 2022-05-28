@@ -8,11 +8,12 @@
             @extend %bgImage;
             background-size: content;
             position: absolute;
-            top: -75px;
-            left: -60%;
+            top: 130px;
+            left: -47%;
             width: 703px;
             height: 600px;
             background-image: url(../img/misc/presentation/presentation__misc1.svg);
+            opacity: 1;
         }
     }
     .max-width {
@@ -62,10 +63,10 @@
             width: 100%;
             max-width: 480px;
             margin: 40px 0;
-            color: var(--primary-ligth-color);
+            color: var(--primary-darken-color);
             font: {
                 size: 16px;
-                weight: 400;
+                weight: 500;
                 family: 'todayshop-regular';
             }
         }
